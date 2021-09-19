@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha512-Dop/vW3iOtayerlYAqCgkVr2aTr2ErwwTYOvRFUpzl2VhCMJyjQF0Q9TjUXIo6JhuM/3i0vVEt2e/7QQmnHQqw==" crossorigin="anonymous">
+    <link rel="stylesheet" href="./highlight/styles/atom-one-dark.min.css">
+    <title>CV - Dziyana Khlamko</title>
+</head>
+
+<body id="background">
+    <div class="container" id="cv">
+        <header>
+            <nav>
+                <div class="menu">
+                    <ul class="list-inline nav_list">
+                        <li class="list-inline-item">
+                            <div class="nav_item">
+                                <a class="nav_link" href="#about_me">About me</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="nav_item">
+                                <a class="nav_link" href="#skills">Skills</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="nav_item">
+                                <a class="nav_link" href="#code">Code Example</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="nav_item">
+                                <a class="nav_link" href="#education">Education</a>
+                            </div>
+                        </li>
+                        <li class="list-inline-item">
+                            <div class="nav_item">
+                                <a class="nav_link" href="#english">English Level</a>
+                            </div>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main id="main-info">
+            <section>
+                <h1 id="name">Dziyana Khlamko</h1>
+                <section>
+                    <h4 id="contact-info">Contact Info</h4>
+                    <div class="contacts">
+                        <ul class="list-unstyled">
+                            <li>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item" id="email">diana.hlomko@gmail.com</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <ul class="list-inline">
+                                    <li class="list-inline-item">
+                                        <a class="contacts_link" href="https://t.me/KEIRAFF">Telegram</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <a class="contacts_link" href="https://join.skype.com/invite/gCqptJk8rdEU">Skype</a>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <div class="list-inline-item" id="discord">Discord: @keiraff#2853</div>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </section>
+                <section class="info">
+                    <h3 id="about_me">About me</h3>
+                    <p>I am a student of Yanka Kupala State University of Grodno. I wanna find a job that I love, so I will never work a day in my life. Perhaps a front-end developer is what I'm looking for :)
+                    </p>
+                </section>
+                <section>
+                    <h3 id="code">Code Example</h3>
+                    <pre id="code-example">
+                            <code class="javascript">
+                String.prototype.capitalize = function() {
+                    return this.charAt(0).toUpperCase() + this.slice(1);
+                }
+
+                String.prototype.toJadenCase = function () {
+                    let wordArray = this.split(" ");
+                    for (var i in wordArray)
+                    {
+                        wordArray[i] = wordArray[i].capitalize();
+                    }
+                    return wordArray.join(" ");
+                }
+                            </code>
+                        </pre>
+                </section>
+                <section>
+                    <h3 id="education">Education</h3>
+                    <ul id="education-list">
+                        <li>Yanka Kupala State University Of Grodno</li>
+                        <li id="hide-li">
+                            <ul>
+                                <li>
+                                    Information Technology Software'23
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            RS Schools Course «JavaScript/Front-end» (in progress)
+                        </li>
+                        <li>
+                            .NET Development in 2020/2021 in EPAM (unfinished)
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 id="english">English Level</h3>
+                    <p>Intermediate/Upper-Intermediate (Grammar - B2, Speaking - B1+).</p>
+                    <p>According to EPAM Test - C1.</p>
+                </section>
+            </section>
+            <div>
+                <aside id="photo">
+                    <img src="images/cv-photo.jpg" alt="cv-photo" width="300" height="300">
+                    <section id="side">
+                        <h3 id="skills">Skills</h3>
+                        <ul class="list-rectangle">
+                            <li>C#, ASP.NET</li>
+                            <li>SQL (MS SQL Server)</li>
+                            <li>HTML5</li>
+                            <li>CSS3 (Bootstrap)</li>
+                            <li>JavaScript Basics</li>
+                            <li>Git</li>
+                            <li>IDE: Visual Studio, Webstorm</li>
+                        </ul>
+                    </section>
+                </aside>
+            </div>
+        </main>
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item">
+                    <a href="https://github.com/keiraff"><img src="images/icon-github.png" alt="Github" width="30" height="30"></a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="https://rs.school/"><img src="images/logo-rsschool.png" alt="rs school" width="60" height="30"></a>
+                </li>
+            </ul>
+            <p>Copyright © 2021</p>
+        </footer>
+    </div>
+    <script src="./highlight/highlight.min.js"></script>
+    <script>
+        hljs.highlightAll();
+    </script>
+</body>
+
+</html>

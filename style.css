@@ -4,30 +4,138 @@
 }
 
 body#background {
-    background-color: black;
-    height: inherit;
-    color: white;
+    color: #ffffff;
+    background-color: #000000;
 }
 
 #cv.container {
-    margin-top: 100px;
     height: 100%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px 50px 50px 50px;
+    background: #212121;
+    border-radius: 20px;
     box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
     -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    background: #212121;
-    border-radius: 30px 30px 30px 30px;
-    padding: 50px 50px 50px 50px;
 }
+
+
+/* navigation menu */
+
+.nav-menu {
+    width: 100%;
+}
+
+.nav_item {
+    margin-top: 15px;
+    margin-bottom: 20px;
+    padding: 5px 10px 5px 10px;
+    background: #3d3d3d;
+    border-radius: 5px 5px 5px 5px;
+    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+}
+
+.nav_link {
+    font-size: inherit;
+    color: inherit;
+    transition-property: color, font-size;
+    transition-duration: 0.7s;
+}
+
+.nav_link:hover {
+    font-size: 110%;
+    color: #dfa1f1;
+    text-decoration: none;
+}
+
+
+/* end of navigation menu */
+
+main#main-info {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    margin: 0 0 50px 0;
+    padding: 5px;
+}
+
+section#left-section {
+    margin-right: 50px;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* contacts section */
+
+h4#contact-info {
+    display: inline-block;
+    font-weight: bold;
+}
+
+.contacts_link {
+    font-size: inherit;
+    color: inherit;
+    transition-property: color;
+    transition-duration: 0.4s;
+}
+
+.contacts_link:hover {
+    color: #dfa1f1;
+    text-decoration: none;
+}
+
+ul.list-unstyled>li {
+    margin-top: 0.5rem;
+    padding: 0.5rem 0.5rem 0 0.5rem;
+}
+
+li#email {
+    margin-left: 2px;
+}
+
+
+/* end of contacts section */
 
 #code-example {
     display: contents;
 }
 
-.list-rectangle {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+
+/* education section */
+
+#education-list {
+    margin-left: 50px;
+    font-size: 15px;
+}
+
+#hide-li {
+    list-style-type: none;
+}
+
+#education-list>li>ul {
+    margin-left: 50px;
+}
+
+
+/* end of education section */
+
+
+/* aside element */
+
+aside#right-aside {
+    width: 50%;
+    height: 100%;
+}
+
+img#cv-photo {
+    height: 100%;
 }
 
 .list-rectangle>li {
@@ -53,122 +161,23 @@ body#background {
     background: #313131;
 }
 
+
+/* end of aside element */
+
 h3,
 .nav_link,
 .contacts_link,
-div#discord {
-    border-bottom: 2px solid #dfa1f1;
-    display: inline-block;
-}
-
+div#discord,
 li#email {
     border-bottom: 2px solid #dfa1f1;
     display: inline-block;
-    margin-left: 2px;
 }
 
-h4#contact-info {
-    display: inline-block;
-    font-weight: bold;
-}
-
-ul.list-unstyled>li {
-    margin-top: 0.5rem;
-    padding: 0.5rem 0.5rem 0 0.5rem;
-}
-
+main#main-info,
 div.contacts {
     border-bottom: 2px solid #3d3d3d;
 }
 
-.contacts_link {
-    font-size: inherit;
-    transition-property: color;
-    transition-duration: 0.4s;
-    color: inherit;
-}
-
-.contacts_link:hover {
-    color: #dfa1f1;
-    text-decoration: none;
-}
-
 img {
-    display: block;
-    margin-left: auto;
-    margin-right: 0;
     width: 100%;
-}
-
-section {
-    width: 740px;
-    height: inherit;
-    float: left;
-}
-
-section#side {
-    width: inherit;
-    height: inherit;
-    float: left;
-}
-
-aside#photo {
-    width: 300px;
-    height: 300px;
-    float: right;
-}
-
-main#main-info {
-    display: flex;
-    height: 100%;
-    margin: 0 0 50px 0;
-    padding: 5px;
-    width: 100%;
-    justify-content: space-between;
-    border-bottom: 2px solid #3d3d3d;
-}
-
-.menu {
-    width: 100%;
-}
-
-header {
-    margin: 0 0 20px 0;
-}
-
-.nav_item {
-    margin-top: 15px;
-    margin-bottom: 20px;
-    background: #3d3d3d;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-    border-radius: 5px 5px 5px 5px;
-    padding: 5px 10px 5px 10px;
-}
-
-.nav_link {
-    font-size: inherit;
-    transition-property: color, font-size;
-    transition-duration: 0.7s;
-    color: inherit;
-}
-
-.nav_link:hover {
-    font-size: 110%;
-    color: #dfa1f1;
-    text-decoration: none;
-}
-
-#education-list {
-    margin-left: 50px;
-    font-size: 15px;
-}
-
-#hide-li {
-    list-style-type: none;
-}
-
-#education-list>li>ul {
-    margin-left: 50px;
 }
